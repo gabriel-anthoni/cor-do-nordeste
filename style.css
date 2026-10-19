@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:wght@500;600&display=swap');
 
 :root {
+    color-scheme: light;
+
     --color-bg: #ffd262;
     --color-card-bg: #fffaf0;
     --color-dark: #2b1b17;

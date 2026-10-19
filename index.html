@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cor do Nordeste — Cultura, História & Identidade</title>
+        
+        <!-- CSS Externo e Fontes -->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        
+        <!-- JavaScript Externo -->
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+
+        <!-- Faixa do Topo -->
+        <header class="top-bar">
+            <p>CULTURA &bull; HISTÓRIA &bull; IDENTIDADE</p>
+        </header>
+
+        <!-- Banner Principal (Hero) -->
+        <section class="hero-banner">
+            <div class="hero-banner__content">
+                <img src="images/logo.png" alt="Logo Cor do Nordeste" class="hero-banner__logo">
+                <p class="hero-banner__slogan">A força, a cor e a poesia da nossa gente em um só lugar.</p>
+            </div>
+        </section>
+
+        <!-- Mensagem de Boas-Vindas -->
+        <div class="welcome-bar">
+            <p>Seja bem-vindo ao portal dedicado a preservar, celebrar e dar palco à riqueza cultural do Nordeste brasileiro.</p>
+        </div>
+
+        <!-- Conteúdo Principal -->
+        <main class="main-container">
+            
+            <!-- Secção Sobre o Nordeste -->
+            <section class="about-section">
+                <div class="about-section__image-wrapper">
+                    <img src="images/nordeste.png" alt="Cultura Nordestina" class="about-section__image">
+                </div>
+                <div class="about-section__content">
+                    <h3 class="about-section__title">
+                        <i class="fa-solid fa-location-dot"></i> Orgulho de ser e viver o Nordeste
+                    </h3>
+                    <p class="about-section__text">
+                        Nascemos do desejo de honrar as nossas raízes e conectar as mais diversas manifestações artísticas, históricas e populares dos nove estados nordestinos. Da literatura de cordel às batidas do maracatu, do sabor do baião ao colorido da chita: aqui, a nossa cultura é viva, diversa e valorizada todos os dias.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Bloco Principal de Cultura -->
+            <section class="culture-section">
+                <h2 class="culture-section__title">Coisas da nossa cultura</h2>
+
+                <!-- Slider 1: Tradições & Arte -->
+                <div class="slider">
+                    <h3 class="slider__category-title">
+                        <i class="fa-solid fa-feather"></i> Tradições & Arte
+                    </h3>
+                    
+                    <div class="slider__controls">
+                        <button class="slider__btn slider__btn--prev" aria-label="Anterior" onclick="scrollSlider('sliderTradicoes', -1)">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <button class="slider__btn slider__btn--next" aria-label="Próximo" onclick="scrollSlider('sliderTradicoes', 1)">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+
+                        <div class="slider__track" id="sliderTradicoes">
+                            <article class="slider__card">
+                                <img src="images/cordel.jpg" class="slider__card-image" alt="Cordel">
+                                <h4 class="slider__card-title">Cordel</h4>
+                                <p class="slider__card-description">Uma expressão literária única, marcada por rimas, histórias de sabedoria popular e folhetos ilustrados com xilogravuras históricas.</p>
+                            </article>
+
+                            <article class="slider__card">
+                                <img src="images/xilogravura.jpg" class="slider__card-image" alt="Xilogravura">
+                                <h4 class="slider__card-title">Xilogravura</h4>
+                                <p class="slider__card-description">A técnica milenar de gravação em relevo na madeira que ilustra a alma, os causos e a poesia do sertão nordestino.</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slider 2: Culinária Típica -->
+                <div class="slider">
+                    <h3 class="slider__category-title">
+                        <i class="fa-solid fa-utensils"></i> Culinária Típica
+                    </h3>
+                    
+                    <div class="slider__controls">
+                        <button class="slider__btn slider__btn--prev" aria-label="Anterior" onclick="scrollSlider('sliderCulinaria', -1)">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <button class="slider__btn slider__btn--next" aria-label="Próximo" onclick="scrollSlider('sliderCulinaria', 1)">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+
+                        <div class="slider__track" id="sliderCulinaria">
+                            <article class="slider__card">
+                                <img src="images/cuscuz-de-milho.jpg" class="slider__card-image" alt="Cuscuz de Milho">
+                                <h4 class="slider__card-title">Cuscuz de Milho</h4>
+                                <p class="slider__card-description">O prato mais tradicional do pequeno-almoço e das mesas nordestinas, preparado à base de milho e servido quentinho.</p>
+                            </article>
+
+                            <article class="slider__card">
+                                <img src="images/baiao-de-dois.jpg" class="slider__card-image" alt="Baião de Dois">
+                                <h4 class="slider__card-title">Baião de Dois</h4>
+                                <p class="slider__card-description">A combinação perfeita de arroz, feijão-de-corda, queijo coalho e carne de sol, regada com abundante manteiga de garrafa.</p>
+                            </article>
+
+                            <article class="slider__card">
+                                <img src="images/acaraje.jpg" class="slider__card-image" alt="Acarajé">
+                                <h4 class="slider__card-title">Acarajé</h4>
+                                <p class="slider__card-description">Bolinho de feijão-fradinho frito no azeite de dendê, herança afro-brasileira marcante recheada com vatapá e camarão.</p>
+                            </article>
+
+                            <article class="slider__card">
+                                <img src="images/tapioca.png" class="slider__card-image" alt="Tapioca">
+                                <h4 class="slider__card-title">Tapioca</h4>
+                                <p class="slider__card-description">Goma de mandioca fina passada na chapa, versátil e deliciosa, perfeita para recheios doces ou salgados.</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slider 3: Músicas & Danças -->
+                <div class="slider">
+                    <h3 class="slider__category-title">
+                        <i class="fa-solid fa-music"></i> Músicas & Danças
+                    </h3>
+                    
+                    <div class="slider__controls">
+                        <button class="slider__btn slider__btn--prev" aria-label="Anterior" onclick="scrollSlider('sliderMusica', -1)">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <button class="slider__btn slider__btn--next" aria-label="Próximo" onclick="scrollSlider('sliderMusica', 1)">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+
+                        <div class="slider__track" id="sliderMusica">
+                            <article class="slider__card">
+                                <img src="images/forro-tradicional.jpg" class="slider__card-image" alt="Forró Tradicional">
+                                <h4 class="slider__card-title">Forró Tradicional</h4>
+                                <p class="slider__card-description">O ritmo contagiante conduzido pela sanfona, zabumba e triângulo que anima os arrasta-pés de todo o Nordeste.</p>
+                            </article>
+
+                            <article class="slider__card">
+                                <img src="images/frevo.png" class="slider__card-image" alt="Frevo">
+                                <h4 class="slider__card-title">Frevo</h4>
+                                <p class="slider__card-description">Dança e ritmo acrobático e vibrante de Pernambuco, marcado pelo som das orquestras de sopro e sombrinhas coloridas.</p>
+                            </article>
+
+                            <article class="slider__card">
+                                <img src="images/maracatu.jpg" class="slider__card-image" alt="Maracatu">
+                                <h4 class="slider__card-title">Maracatu</h4>
+                                <p class="slider__card-description">Manifestação cortejo ancestral com ritmos marcantes de alfaias e batuques que celebram a cultura afro-brasileira.</p>
+                            </article>
+
+                            <article class="slider__card">
+                                <img src="images/quadrilha-junina.jpg" class="slider__card-image" alt="Quadrilha Junina">
+                                <h4 class="slider__card-title">Quadrilha Junina</h4>
+                                <p class="slider__card-description">A grande dança coletiva que colore os arraiás no mês de junho, cheia de teatralidade, trajes típicos e alegria.</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            
+        </main>
+
+        <!-- Rodapé -->
+        <footer class="site-footer">
+            <p>&copy; 2026 Cor do Nordeste &bull; Celebrando nossa arte e identidade.</p>
+        </footer>
+
+    </body>
+</html>

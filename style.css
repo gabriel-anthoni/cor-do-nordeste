@@ -221,7 +221,7 @@ body {
     right: -15px;
 }
 
-/* Card Individual */
+/* Card Individual (Padrão Desktop) */
 .slider__card {
     background: var(--color-card-bg);
     padding: 0 0 20px 0;
@@ -309,9 +309,43 @@ body {
         text-align: left;
     }
 
+    .about-section__image-wrapper img:hover {
+        transform: none;
+    }
+
+    .about-section__image-wrapper img:active {
+        transform: rotate(-2deg) scale(1.02);
+    }
+
+    .slider__btn:hover {
+        background-color: var(--color-dark);
+        color: var(--color-gold);
+        transform: translateY(-50%);
+    }
+
+    .slider__btn:active {
+        background-color: var(--color-accent);
+        color: #ffffff;
+        transform: translateY(-50%) scale(1.08);
+    }
+
+    .slider__category-title {
+        text-align: center;
+    }
+
     .slider__card {
         min-width: 100%;
         max-width: 100%;
+    }
+
+    .slider__card:hover {
+        transform: none;
+        box-shadow: 4px 4px 0px var(--color-dark);
+    }
+
+    .slider__card:active {
+        transform: translateY(-3px);
+        box-shadow: 6px 6px 0px var(--color-accent);
     }
 
     .slider__btn--prev {
